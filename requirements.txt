@@ -1,0 +1,6 @@
+pyspark
+mlflow
+matplotlib
+pandas
+numpy
+mleap
