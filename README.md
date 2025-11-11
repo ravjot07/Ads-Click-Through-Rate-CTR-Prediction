@@ -2,7 +2,7 @@
 # Ads Click-Through-Rate (CTR) Prediction using Spark MLlib
 
 ### Big Data Analytics Project  
-**Group Members:** Ravjot Singh, Rudra Suthar, Rajive Ranjan  
+**Group Members:** Ravjot Singh, Rudra Suthar, Rajiv Ranjan  
 
 ---
 
@@ -24,12 +24,12 @@ It leverages **Apache Spark MLlib** for distributed data processing and machine 
 
 ```mermaid
 flowchart TD
-    A[Taobao Dataset] --> B[Data Preprocessing<br/>(Cleaning, Merging, Dropping Columns)]
-    B --> C[Feature Engineering<br/>(Encoding, Aggregation)]
-    C --> D[Data Balancing<br/>(Oversampling)]
-    D --> E[Model Training<br/>Logistic Regression, Decision Tree, Random Forest, GBT]
-    E --> F[Model Evaluation<br/>ROC, AUC]
-    F --> G[MLflow Tracking<br/>Store Best Model]
+    A[Taobao Dataset] --> B[Data Preprocessing\n(Cleaning, Merging, Dropping Columns)]
+    B --> C[Feature Engineering\n(Encoding, Aggregation)]
+    C --> D[Data Balancing\n(Oversampling)]
+    D --> E[Model Training\nLogistic Regression, Decision Tree, Random Forest, GBT]
+    E --> F[Model Evaluation\nROC, AUC]
+    F --> G[MLflow Tracking\nStore Best Model]
    ```
 
 ## Dataset
@@ -47,8 +47,8 @@ graph LR
     A[Raw Data] --> B[StringIndexer]
     B --> C[OneHotEncoder]
     C --> D[VectorAssembler]
-    D --> E[Model Training<br/>(LR / DT / RF / GBT)]
-    E --> F[BinaryClassificationEvaluator<br/>(AUC, ROC)]
+    D --> E[Model Training\n(LR / DT / RF / GBT)]
+    E --> F[BinaryClassificationEvaluator\n(AUC, ROC)]
 ```
 
 ## Execution Steps
