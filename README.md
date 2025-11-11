@@ -24,12 +24,12 @@ It leverages **Apache Spark MLlib** for distributed data processing and machine 
 
 ```mermaid
 flowchart TD
-    A[Taobao Dataset] --> B[Data Preprocessing\n(Cleaning, Merging, Dropping Columns)]
-    B --> C[Feature Engineering\n(Encoding, Aggregation)]
-    C --> D[Data Balancing\n(Oversampling)]
-    D --> E[Model Training\nLogistic Regression, Decision Tree, Random Forest, GBT]
-    E --> F[Model Evaluation\nROC, AUC]
-    F --> G[MLflow Tracking\nStore Best Model]
+    A[Taobao Dataset] --> B[Data Preprocessing (Cleaning, Merging, Dropping Columns)]
+    B --> C[Feature Engineering (Encoding, Aggregation)]
+    C --> D[Data Balancing (Oversampling)]
+    D --> E[Model Training (Logistic Regression, Decision Tree, Random Forest, GBT)]
+    E --> F[Model Evaluation (ROC, AUC)]
+    F --> G[MLflow Tracking (Store Best Model)]
    ```
 
 ## Dataset
@@ -47,8 +47,8 @@ graph LR
     A[Raw Data] --> B[StringIndexer]
     B --> C[OneHotEncoder]
     C --> D[VectorAssembler]
-    D --> E[Model Training\n(LR / DT / RF / GBT)]
-    E --> F[BinaryClassificationEvaluator\n(AUC, ROC)]
+    D --> E[Model Training (LR / DT / RF / GBT)]
+    E --> F[BinaryClassificationEvaluator (AUC, ROC)]
 ```
 
 ## Execution Steps
